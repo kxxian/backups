@@ -46,7 +46,7 @@ call plug#end()
 " normal mode (after 500ms; no delay when writing).
 call neomake#configure#automake('nrwi', 500)
 
-:colorscheme github 
+:colorscheme dracula 
 
 "Remap esc to normal mode
 inoremap jj <Esc>
