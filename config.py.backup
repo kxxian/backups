@@ -26,8 +26,7 @@
 
 import os
 import subprocess
-from libqtile import hook
-from libqtile import bar, layout, widget
+from libqtile import bar, layout, widget, hook
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
@@ -119,8 +118,38 @@ for i in groups:
     )
 
 layouts = [
-    layout.Columns(border_focus_stack=["#d75f5f", "#8f3d3d"], border_width=4),
+    layout.Columns(
+        border_width=2,            
+        border_focus = '#ffffff',
+        border_focus_stack = '#ffffff',
+        border_normal = '#282828',
+        border_normal_stack = '#282828',
+        border_on_single = True,
+        margin = 3,
+        margin_on_single = 7,
+    ),
     layout.Max(),
+    layout.Floating(
+        float_rules  = [
+                Match(wm_type="utility"),
+                Match(wm_type="notification"),
+                Match(wm_type="toolbar"),
+                Match(wm_type="splash"),
+                Match(wm_type="dialog"),
+                Match(wm_class="file_progress"),
+                Match(wm_class="confirm"),
+                Match(wm_class="dialog"),
+                Match(wm_class="download"),
+                Match(wm_class="error"),
+                Match(wm_class="notification"),
+                Match(wm_class="splash"),
+                Match(wm_class="toolbar"),
+                Match(func=lambda c: c.has_fixed_size()),
+                Match(func=lambda c: c.has_fixed_ratio()),
+            ],
+        border_focus = '#ffffff',
+        border_normal = '#282828',
+    ),
     # Try more layouts by unleashing below layouts.
     # layout.Stack(num_stacks=2),
     # layout.Bsp(),
