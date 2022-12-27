@@ -145,8 +145,15 @@ screens = [
     Screen(
         top=bar.Bar(
             [
-                widget.CurrentLayout(),
-                widget.GroupBox(highlight_method = 'block'),
+                widget.GroupBox(
+                        highlight_method = 'line',
+                        font="Hack Regular Nerd Font Complete Mono",
+                        highlight_color = [
+                                '000000',
+                                '#ffffff'
+                            ],
+                        hide_unused = True,
+                    ),
                 widget.Prompt(),
                 widget.WindowName(),
                 widget.Chord(
@@ -174,7 +181,8 @@ screens = [
                         default_text = "[ x ]",
                         countdown_start = 10,
                         countdown_format = ' {} s '
-                    )
+                    ),
+                widget.CurrentLayout()
             ],
             24,
             # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
