@@ -93,7 +93,7 @@ keys = [
     Key([mod, "shift"], "Print", lazy.spawn("scrot -s"), desc="Screenshot select")
 ]
 
-groups = [Group(i) for i in "wertsdfzxcv"]
+groups = [Group(i) for i in "123456789"]
 
 for i in groups:
     keys.extend(
