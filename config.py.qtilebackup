@@ -69,7 +69,7 @@ keys = [
     Key([mod], "Return", lazy.spawn("alacritty"), desc="Launch terminal"),
     # Toggle between different layouts as defined below
     Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
-    Key([mod], "w", lazy.window.kill(), desc="Kill focused window"),
+    Key([mod], "q", lazy.window.kill(), desc="Kill focused window"),
     Key([mod, "control"], "r", lazy.reload_config(), desc="Reload the config"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     # Thunar
@@ -93,7 +93,7 @@ keys = [
     Key([mod, "shift"], "Print", lazy.spawn("scrot -s"), desc="Screenshot select")
 ]
 
-groups = [Group(i) for i in "123456789"]
+groups = [Group(i) for i in "wertsdfzxcv"]
 
 for i in groups:
     keys.extend(
@@ -166,7 +166,7 @@ layouts = [
 ]
 
 widget_defaults = dict(
-    font="Hack Nerd Font",
+    font="Hack Nerd Font Complete Mono",
     fontsize=12,
     padding=3,
 )
@@ -184,6 +184,7 @@ screens = [
                                 '#ffffff'
                             ],
                         hide_unused = True,
+                        padding = 1,
                     ),
                 widget.Prompt(),
                 widget.WindowName(),
@@ -195,6 +196,10 @@ screens = [
                 ),
                 # NB Systray is incompatible with Wayland, consider using StatusNotifier instead
                 # widget.StatusNotifier(),
+                widget.Systray(),
+                widget.Volume(
+                        fmt = 'Vol: {}'
+                    ),
                 widget.Battery(
                         update_interval = 5,
                         battery = 0,
@@ -203,21 +208,17 @@ screens = [
                         full_char = 'F',
                         empty_char = 'E'
                     ),
-                widget.Volume(
-                        fmt = 'Vol: {}'
-                    ),
-                widget.Systray(),
-                widget.Clock(format="%B-%d-%Y %a %H:%M:%S %p"),
+                widget.Clock(format=" %a %b %d %Y | %H:%M:%S %p"),
+                widget.CurrentLayout(),
                 widget.QuickExit(
                         default_text = "[ x ]",
                         countdown_start = 10,
                         countdown_format = ' {} s '
-                    ),
-                widget.CurrentLayout()
+                    )
             ],
             24,
-            # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
-            # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
+            # border_width=[1, 0, 1, 0],  # Draw top and bottom borders
+            # border_color=["ffffff", "000000", "ffffff", "000000"]  # Borders are magenta
         ),
     ),
 ]
