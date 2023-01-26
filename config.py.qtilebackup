@@ -184,7 +184,7 @@ screens = [
                                 '#ffffff'
                             ],
                         hide_unused = True,
-                        padding = 1,
+                        padding = 0,
                     ),
                 widget.Prompt(),
                 widget.WindowName(),
@@ -196,7 +196,7 @@ screens = [
                 ),
                 # NB Systray is incompatible with Wayland, consider using StatusNotifier instead
                 # widget.StatusNotifier(),
-                widget.Systray(),
+                widget.Clock(format="  %H:%M:%S   %b %d %Y %a "),
                 widget.Volume(
                         fmt = 'Vol: {}'
                     ),
@@ -208,7 +208,7 @@ screens = [
                         full_char = 'F',
                         empty_char = 'E'
                     ),
-                widget.Clock(format=" %a %b %d %Y | %H:%M:%S %p"),
+                widget.Systray(),
                 widget.CurrentLayout(),
                 widget.QuickExit(
                         default_text = "[ x ]",
