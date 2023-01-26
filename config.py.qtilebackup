@@ -73,11 +73,11 @@ keys = [
     Key([mod, "control"], "r", lazy.reload_config(), desc="Reload the config"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     # Thunar
-    Key([mod], "1", lazy.spawn("alacritty -e ranger"), desc="Launch ranger"),
+    Key([mod], "e", lazy.spawn("alacritty -e ranger"), desc="Launch ranger"),
     # Browser firefox
-    Key([mod], "2", lazy.spawn("qutebrowser"), desc="Launch qutebrowser"),
+    Key([mod], "b", lazy.spawn("qutebrowser"), desc="Launch qutebrowser"),
     # Rofi menu 
-    Key([mod], "3", lazy.spawn("rofi -show drun"), desc="Launch rofi menu"),
+    Key([mod], "m", lazy.spawn("rofi -show drun"), desc="Launch rofi menu"),
     # Brightness Up / Down 
     Key([], "XF86MonBrightnessUp",   lazy.spawn("brightnessctl set +5%"), desc="Brigthness up"),
     Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 5%-"), desc ="Brightness down"),
