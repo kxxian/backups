@@ -93,7 +93,7 @@ keys = [
     Key([mod, "shift"], "Print", lazy.spawn("scrot -s"), desc="Screenshot select")
 ]
 
-groups = [Group(i) for i in "123456789"]
+groups = [Group(i) for i in "1234567890"]
 
 for i in groups:
     keys.extend(
@@ -128,7 +128,7 @@ layouts = [
         border_normal_stack = '#282828',
         border_on_single = True,
         margin = 10,
-        margin_on_single = 20,
+        margin_on_single = 25,
     ),
     layout.Max(),
     layout.Floating(
@@ -150,7 +150,7 @@ layouts = [
                 Match(func=lambda c: c.has_fixed_ratio()),
             ],
         border_focus = '#ffffff',
-        border_normal = '#282828',
+        border_normal = '#282828'
     ),
     # Try more layouts by unleashing below layouts.
     # layout.Stack(num_stacks=2),
@@ -196,19 +196,25 @@ screens = [
                 ),
                 # NB Systray is incompatible with Wayland, consider using StatusNotifier instead
                 # widget.StatusNotifier(),
-                widget.Clock(format="  %H:%M:%S   %b %d %Y %a "),
+                widget.Systray(),
+                widget.Spacer(
+                        length=4
+                    ),
                 widget.Volume(
-                        fmt = 'Vol: {}'
+                        fmt = '奔 {}',
+                        fontsize = 11
                     ),
                 widget.Battery(
                         update_interval = 5,
                         battery = 0,
-                        charge_char = '^',
-                        discharge_char = 'v',
-                        full_char = 'F',
-                        empty_char = 'E'
+                        fontsize = 11,
+                        charge_char = '',
+                        discharge_char = '',
+                        full_char = '',
+                        empty_char = '',
+                        unknown_char = ''
                     ),
-                widget.Systray(),
+                widget.Clock(format=" %Y/%m/%d %A  %H:%M:%S", fontsize=11),
                 widget.CurrentLayout(),
                 widget.QuickExit(
                         default_text = "[ x ]",
@@ -216,7 +222,7 @@ screens = [
                         countdown_format = ' {} s '
                     )
             ],
-            24,
+            20,
             # border_width=[1, 0, 1, 0],  # Draw top and bottom borders
             # border_color=["ffffff", "000000", "ffffff", "000000"]  # Borders are magenta
         ),
