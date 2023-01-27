@@ -93,24 +93,25 @@ keys = [
     Key([mod, "shift"], "Print", lazy.spawn("scrot -s"), desc="Screenshot select")
 ]
 
-groups = [Group(i) for i in "1234567890"]
+groups = [Group(i) for i in ["www", "ter", "lib", "etc", "rgr", "zxc", "abc", "ter2", "dsc"]]
 
-for i in groups:
+for i, group in enumerate(groups):
+    desktopNumber = str(i+1);
     keys.extend(
         [
             # mod1 + letter of group = switch to group
             Key(
                 [mod],
-                i.name,
-                lazy.group[i.name].toscreen(),
-                desc="Switch to group {}".format(i.name),
+                desktopNumber,
+                lazy.group[group.name].toscreen(),
+                desc="Switch to group {}".format(group.name),
             ),
             # mod1 + shift + letter of group = switch to & move focused window to group
             Key(
                 [mod, "shift"],
-                i.name,
-                lazy.window.togroup(i.name, switch_group=True),
-                desc="Switch to & move focused window to group {}".format(i.name),
+                desktopNumber,
+                lazy.window.togroup(group.name, switch_group=True),
+                desc="Switch to & move focused window to group {}".format(group.name),
             ),
             # Or, use below if you prefer not to switch to that group.
             # # mod1 + shift + letter of group = move focused window to group
@@ -168,7 +169,7 @@ layouts = [
 widget_defaults = dict(
     font="Hack Nerd Font Complete Mono",
     fontsize=12,
-    padding=3,
+    padding=1,
 )
 extension_defaults = widget_defaults.copy()
 
@@ -178,16 +179,19 @@ screens = [
             [
                 widget.GroupBox(
                         highlight_method = 'line',
+                        # highlight_color = ['000000', 'ffffff'],
                         font="Hack Regular Nerd Font Complete Mono",
-                        highlight_color = [
-                                '000000',
-                                '#ffffff'
-                            ],
-                        hide_unused = True,
-                        padding = 0,
                     ),
                 widget.Prompt(),
-                widget.WindowName(),
+                widget.Spacer(
+                        length=4
+                    ),
+                widget.WindowName(
+                        background = "282828", 
+                        padding = 5,
+                        empty_group_string = " Arch Linux - I'm basically a lazy person who likes to get credit for things other people actually do. - Linus Torvalds "
+                        
+                    ),
                 widget.Chord(
                     chords_colors={
                         "launch": ("#ff0000", "#ffffff"),
@@ -196,33 +200,42 @@ screens = [
                 ),
                 # NB Systray is incompatible with Wayland, consider using StatusNotifier instead
                 # widget.StatusNotifier(),
-                widget.Systray(),
+                widget.Spacer(
+                        length=4
+                    ),
+                widget.Clock(format=" %m/%d/%Y %A  %H:%M:%S ", fontsize = 12),
                 widget.Spacer(
                         length=4
                     ),
                 widget.Volume(
                         fmt = '奔 {}',
-                        fontsize = 11
+                        # fontsize = 11
+                    ),
+                widget.Spacer(
+                        length=5
                     ),
                 widget.Battery(
                         update_interval = 5,
                         battery = 0,
-                        fontsize = 11,
+                        # fontsize = 11,
                         charge_char = '',
                         discharge_char = '',
                         full_char = '',
                         empty_char = '',
                         unknown_char = ''
                     ),
-                widget.Clock(format=" %Y/%m/%d %A  %H:%M:%S", fontsize=11),
-                widget.CurrentLayout(),
+                widget.Spacer(
+                        length=4
+                    ),
+                widget.CurrentLayout(background = '282828', padding = 5),
                 widget.QuickExit(
                         default_text = "[ x ]",
                         countdown_start = 10,
                         countdown_format = ' {} s '
-                    )
+                    ),
+                widget.Systray(),
             ],
-            20,
+            22,
             # border_width=[1, 0, 1, 0],  # Draw top and bottom borders
             # border_color=["ffffff", "000000", "ffffff", "000000"]  # Borders are magenta
         ),
