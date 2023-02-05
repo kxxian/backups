@@ -192,6 +192,15 @@ screens = [
                         empty_group_string = " Arch Linux - I'm basically a lazy person who likes to get credit for things other people actually do. - Linus Torvalds "
                         
                     ),
+                widget.Notify(
+                        background = "282828", 
+                        padding = 5,
+                        action = True,
+                        default_timeout = 120,
+                        scroll = True,
+                        scroll_fixed_width = True,
+                        scroll_repeat = True
+                    ),
                 widget.Chord(
                     chords_colors={
                         "launch": ("#ff0000", "#ffffff"),
