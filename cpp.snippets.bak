@@ -1,0 +1,16 @@
+snippet n
+'\n';
+endsnippet
+
+snippet t 
+'t';
+endsnippet
+
+snippet main 
+int main()
+{
+
+
+	return 0;
+}
+endsnippet

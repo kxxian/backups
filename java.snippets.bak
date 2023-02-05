@@ -1,0 +1,7 @@
+snippet p
+System.out.print();
+endsnippet
+
+snippet pln 
+System.out.println();
+endsnippet
