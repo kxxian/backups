@@ -1,7 +1,7 @@
-snippet p
+snippet sout
 System.out.print();
 endsnippet
 
-snippet pln 
+snippet ln 
 System.out.println();
 endsnippet
