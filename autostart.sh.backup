@@ -1,9 +1,0 @@
-#!/bin/sh
-
-# system icons 
-udiskie -t -a &
-nm-applet & 
-
-# background 
-nitrogen --restore &
-
