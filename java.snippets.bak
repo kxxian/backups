@@ -2,6 +2,9 @@ snippet sout
 System.out.print();
 endsnippet
 
-snippet ln 
-System.out.println();
+snippet main
+public static void main(String[] args)
+{
+
+}
 endsnippet
