@@ -1,16 +1,71 @@
-snippet sout
+snippet sout "print out" 
 System.out.print();
 endsnippet
 
-snippet main
+snippet main "main class" 
 public static void main(String[] args)
 {
 
 }
 endsnippet
 
-snippet cb 
+snippet cb "curly brackets" 
 {
 
+}
+endsnippet
+
+snippet pbclss "public class" 
+public class
+endsnippet
+
+snippet if "if statement" 
+if(condition)
+{
+	// statement
+}
+endsnippet
+
+snippet eif "if else statement" 
+if(condition)
+{
+	// statement
+}
+else
+{
+
+}
+endsnippet
+
+snippet elif "else if statement" 
+if(condition1)
+{
+	// statement1
+}
+else if(condition2)
+{
+	// statement2
+}
+else
+{
+
+}
+endsnippet
+
+snippet for "for loop"
+for(initialization;condition;increment)
+{
+	// statement
+}
+endsnippet
+
+snippet switch "switch case"
+switch(expression)
+{
+	case: 
+	break;
+
+	default:
+	break;
 }
 endsnippet
