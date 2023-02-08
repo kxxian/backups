@@ -69,3 +69,10 @@ switch(expression)
 	break;
 }
 endsnippet
+
+snippet while "while loop"
+while(condition)
+{
+	// statement
+}
+endsnippet
