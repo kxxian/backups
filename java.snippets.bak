@@ -3,10 +3,10 @@ System.out.print();
 endsnippet
 
 snippet main "main class" 
-public static void main(String[] args)
+public static void main(String[] args)// main class
 {
 
-}
+}// end main class
 endsnippet
 
 snippet cb "curly brackets" 
@@ -20,25 +20,25 @@ public class
 endsnippet
 
 snippet if "if statement" 
-if(condition)
+if(condition)// if statement
 {
 	// statement
-}
+}// end if statement
 endsnippet
 
 snippet eif "if else statement" 
-if(condition)
+if(condition)// if else statement
 {
 	// statement
 }
 else
 {
 
-}
+}// end if else statement 
 endsnippet
 
 snippet elif "else if statement" 
-if(condition1)
+if(condition1)// else if statement
 {
 	// statement1
 }
@@ -49,30 +49,30 @@ else if(condition2)
 else
 {
 
-}
+}// end else if statement
 endsnippet
 
 snippet for "for loop"
-for(initialization;condition;increment)
+for(initialization;condition;increment)// for loop
 {
 	// statement
-}
+}// end for loop
 endsnippet
 
 snippet switch "switch case"
-switch(expression)
+switch(expression)// switch case 
 {
 	case: 
 	break;
 
 	default:
 	break;
-}
+}// end switch case
 endsnippet
 
 snippet while "while loop"
-while(condition)
+while(condition)// while loop
 {
 	// statement
-}
+}// end while loop
 endsnippet
