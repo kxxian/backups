@@ -248,6 +248,21 @@ screens = [
                         countdown_format = ' {} s '
                     ),
                 widget.Systray(),
+                widget.Spacer(
+                        length=5
+                    ),
+                widget.TextBox(
+                        background='282828',
+                        text='I\'m interested in Linux because of the technology, and Linux wasn\'t started as any kind of rebelion against the \"evil Microsoft empire\" - Linus Torvalds ',
+                        width=469, 
+                        padding=10,
+                        scroll=True,
+                        scroll_delay=1,
+                        scroll_repeat=True,
+                        scroll_clear=True,
+                        scroll_step=1,
+                        scroll_interval=0.1,
+                    )
             ],
             22,
             # border_width=[1, 0, 1, 0],  # Draw top and bottom borders
