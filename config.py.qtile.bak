@@ -196,7 +196,7 @@ screens = [
                 widget.WindowName(
                         background = "282828", 
                         padding = 10,
-                        empty_group_string = " Arch Linux - Don't hurry your code. Make sure it works well and is well designed. Don't worry about timming. - Linus Torvalds ",
+                        empty_group_string = " Don't hurry your code. Make sure it works well and is well designed. Don't worry about timming. - Linus Torvalds ",
                         scroll=True,
                         width=379,
                         scroll_delay=1,
