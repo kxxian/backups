@@ -130,3 +130,7 @@ source "$OSH"/oh-my-bash.sh
 alias ls="lsd"
 alias cat="bat"
 alias update="sudo pacman -Syu"
+alias install="sudo pacman -S"
+alias remove="sudo pacman -Rns"
+# open neofetch in every new terminal
+neofetch
