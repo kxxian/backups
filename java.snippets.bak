@@ -2,31 +2,31 @@ snippet sout "The parameter might be anything that the user wishes to print on t
 System.out.println();
 endsnippet
 
-snippet main "All Java programs must have an entry point, which is always the main() method. Whenever the program is called, it automatically executes the main() method first." 
+snippet main  
 public static void main(String[] args)// main class
 {
 
 }// end main class
 endsnippet
 
-snippet cb "Different programming languages have various ways to delineate the start and end points of a programming structure, such as a loop, method or conditional statement. For example, Java and C++ are often referred to as curly brace languages because curly braces are used to define the start and end of a code block." 
+snippet cb  
 {
 
-}
+}// end
 endsnippet
 
-snippet pbclss "Everything in Java is associated with classes and objects, along with its attributes and methods. For example: in real life, a car is an object. The car has attributes, such as weight and color, and methods, such as drive and brake. A Class is like an object constructor, or a blueprint for creating objects." 
+snippet pbclss  
 public class
 endsnippet
 
-snippet if "Use the if statement to specify a block of Java code to be executed if a condition is true." 
+snippet if 
 if(condition)// if statement
 {
 	// block of code to be executed if the condition is true
 }// end if statement
 endsnippet
 
-snippet eif "Use else to specify a block of code to be executed, if the same condition is false" 
+snippet eif  
 if(condition)// if else statement
 {
 	// block of code to be executed if the condition is true
@@ -37,7 +37,7 @@ else
 }// end if else statement 
 endsnippet
 
-snippet elif "Use else if to specify a new condition to test, if the first condition is false" 
+snippet elif  
 if(condition1)// else if statement
 {
 	// block of code to be executed if the condition is true
@@ -52,18 +52,18 @@ else
 }// end else if statement
 endsnippet
 
-snippet ternary "It can be used to replace multiple lines of code with a single line, and is most often used to replace simple if else statements"
+snippet ternary 
 variable = (condition) ? expressionTrue :  expressionFalse; // short hand if else statement
 endsnippet
 
-snippet for "When you know exactly how many times you want to loop through a block of code, use the for loop instead of a while loop"
+snippet for 
 for(initialization;condition;increment)// for loop
 {
 	// code block to be executed
 }// end for loop
 endsnippet
 
-snippet switch "Instead of writing many if..else statements, you can use the switch statement. The switch statement selects one of many code blocks to be executed"
+snippet switch 
 switch(expression)// switch case 
 {
 	// code block
@@ -75,14 +75,14 @@ switch(expression)// switch case
 }// end switch case
 endsnippet
 
-snippet while "The while loop loops through a block of code as long as a specified condition is true"
+snippet while 
 while(condition)// while loop
 {
 	// code block to be executed
 }// end while loop
 endsnippet
 
-snippet dowhile "The do/while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true."
+snippet dowhile 
 do
 {
 	// code block to be executed
@@ -90,6 +90,6 @@ do
 while(condition)
 endsnippet
 
-snippet import_scanner "A simple text scanner which can parse primitive types and strings using regular expressions. A Scanner breaks its input into tokens using a delimiter pattern, which by default matches whitespace."
+snippet import_scanner 
 import java.util.Scanner;
 endsnippet
