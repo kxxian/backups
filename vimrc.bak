@@ -37,6 +37,7 @@ Plug 'rhysd/vim-fixjson'
 Plug 'mhinz/vim-startify'
 Plug 'neomake/neomake'
 Plug 'Mofiqul/dracula.nvim'
+Plug 'vim-airline/vim-airline-themes'
 
 set encoding=UTF-8
 
@@ -67,6 +68,9 @@ let g:airline#extensions#tabline#enabled = 1
 
 "Airline powerline
 let g:airline_powerline_fonts = 1
+
+" Airline theme 
+let g:airline_theme='minimalist'
 
 "Buffer tabs
 nnoremap <C-h> :bprevious<CR>
