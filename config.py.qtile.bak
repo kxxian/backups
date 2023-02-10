@@ -188,18 +188,15 @@ screens = [
                     ),
                 widget.WindowName(
                         background = "282828", 
-                        padding = 5,
-                        empty_group_string = " Arch Linux - I'm basically a lazy person who likes to get credit for things other people actually do. - Linus Torvalds "
-                        
-                    ),
-                widget.Notify(
-                        background = "282828", 
-                        padding = 5,
-                        action = True,
-                        default_timeout = 120,
-                        scroll = True,
-                        scroll_fixed_width = True,
-                        scroll_repeat = True
+                        padding = 10,
+                        empty_group_string = " Arch Linux - Don't hurry your code. Make sure it works well and is well designed. Don't worry about timming. - Linus Torvalds ",
+                        scroll=True,
+                        width=480,
+                        scroll_delay=1,
+                        scroll_repeat=True,
+                        scroll_clear=True,
+                        scroll_step=1,
+                        scroll_interval=0.1,
                     ),
                 widget.Chord(
                     chords_colors={
@@ -209,12 +206,20 @@ screens = [
                 ),
                 # NB Systray is incompatible with Wayland, consider using StatusNotifier instead
                 # widget.StatusNotifier(),
-                widget.Spacer(
-                        length=4
+                widget.CPUGraph(
+                        frequency=1,
+                        border_color='#000000',
+                        graph_color='ffffff',
+                        type='line',
+                        line_width=1
                     ),
+                widget.ThermalSensor(
+                        background='282828',
+                        format='{tag}: {temp: .0f}{unit}',
+                        ),
                 widget.Clock(format=" %m/%d/%Y %A  %H:%M:%S ", fontsize = 12),
                 widget.Spacer(
-                        length=4
+                        length=2
                     ),
                 widget.Volume(
                         fmt = '奔 {}',
