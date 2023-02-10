@@ -268,7 +268,7 @@ screens = [
                         unknown_char = ''
                     ),
                 widget.Spacer(
-                        length=4
+                        length=7
                     ),
                 widget.TextBox(
                        text='', # nf-cod-triangle-left
@@ -285,12 +285,18 @@ screens = [
                        background='000000',
                        padding=0
                     ),
+                widget.Spacer(
+                        length=5
+                    ),
+                widget.Systray(),
+                widget.Spacer(
+                        length=5
+                    ),
                 widget.QuickExit(
                         default_text = "[ x ]",
                         countdown_start = 10,
                         countdown_format = ' {} s '
                     ),
-                widget.Systray(),
                 widget.Spacer(
                         length=5
                     ),
