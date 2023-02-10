@@ -293,9 +293,9 @@ screens = [
                         length=5
                     ),
                 widget.QuickExit(
-                        default_text = "[ x ]",
+                        default_text = "[x]",
                         countdown_start = 10,
-                        countdown_format = ' {} s '
+                        countdown_format = '{}s'
                     ),
                 widget.Spacer(
                         length=5
@@ -309,7 +309,7 @@ screens = [
                     ),
                 widget.TextBox(
                         background='282828',
-                        text='I\'m interested in Linux because of the technology, and Linux wasn\'t started as any kind of rebelion against the \"evil Microsoft empire\" - Linus Torvalds ',
+                        text='                           ',
                         width=469, 
                         padding=10,
                         scroll=True,
