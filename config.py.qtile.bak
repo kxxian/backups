@@ -290,7 +290,7 @@ screens = [
                     ),
                 widget.Systray(),
                 widget.Spacer(
-                        length=5
+                        length=1
                     ),
                 widget.QuickExit(
                         default_text = "[x]",
