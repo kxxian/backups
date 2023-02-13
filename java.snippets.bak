@@ -63,6 +63,12 @@ for(initialization;condition;increment)// for loop
 }// end for loop
 endsnippet
 
+snippet forEach
+for(variableName : arrayName)
+{
+	// code block to be executed
+}// end for each loop
+
 snippet switch 
 switch(expression)// switch case 
 {
