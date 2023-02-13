@@ -99,3 +99,11 @@ endsnippet
 snippet import_scanner 
 import java.util.Scanner;
 endsnippet
+
+snippet import_random
+import java.util.Random;
+endsnippet
+
+snippet import_ArrayList
+import java.utilArrayList;
+endsnippet
