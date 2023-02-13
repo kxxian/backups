@@ -286,7 +286,7 @@ screens = [
                        padding=0
                     ),
                 widget.Spacer(
-                        length=5
+                        length=3
                     ),
                 widget.Systray(),
                 widget.Spacer(
