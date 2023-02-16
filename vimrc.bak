@@ -70,7 +70,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
 " Airline theme 
-let g:airline_theme='minimalist'
+let g:airline_theme='jellybeans'
 
 "Buffer tabs
 nnoremap <C-h> :bprevious<CR>

@@ -48,30 +48,30 @@ items:
         white: "#f7f7f7"
   - theme: 3024.dark
 colors:
-  name: Red Phoenix
-  author: dkeg
+  # Default colors
   primary:
-    background: "#111111"
-    foreground: "#ffffff"
-  cursor:
-    text: "#111111"
-    cursor: "#ffffff"
+    background: '#101421'
+    foreground: '#fffbf6'
+
+  # Normal colors
   normal:
-    black: "#131313"
-    red: "#2d2d2d"
-    green: "#4c3a3d"
-    yellow: "#4e4e4e"
-    blue: "#6f6f6f"
-    magenta: "#909090"
-    cyan: "#aaa998"
-    white: "#b1b1b1"
+    black: '#2e2e2e'
+    red: '#eb4129'
+    green: '#abe047'
+    yellow: '#f6c744'
+    blue: '#47a0f3'
+    magenta: '#7b5cb0'
+    cyan: '#64dbed'
+    white: '#e5e9f0'
+
+  # Bright colors
   bright:
-    black: "#d1d1d1"
-    red: "#d2c3ad"
-    green: "#df9767"
-    yellow: "#e1e1e1"
-    blue: "#ededed"
-    magenta: "#ed4b19"
-    cyan: "#f2361e"
-    white: "#fa390f"
-theme: Dkeg - redphoenix
+    black: '#565656'
+    red: '#ec5357'
+    green: '#c0e17d'
+    yellow: '#f9da6a'
+    blue: '#49a4f8'
+    magenta: '#a47de9'
+    cyan: '#99faf2'
+    white: '#ffffff'
+theme: iTerm-Default
