@@ -186,6 +186,7 @@ screens = [
                         block_highlight_text_color='#87cefa', # Light Sky Blue
                         active='#76ff7a', # Screamin Greenn
                         inactive='#b22222', # Brick Red
+                        fontshadow='#126180',
                         font="Hack Regular Nerd Font Complete Mono",
                     ),
                 widget.Prompt(),
@@ -201,16 +202,19 @@ screens = [
                     ),
                 widget.WindowName(
                         padding = 10,
-                        empty_group_string = "                                             ",
+                        # empty_group_string = "                                             ",
+                        empty_group_string="display_info if application == true else null ",
                         background='#126180', # Blue Sapphire
                         foreground='#7fffd4', # Aquamarine
-                        scroll=True,
-                        width=379,
-                        scroll_delay=1,
-                        scroll_repeat=True,
-                        scroll_clear=True,
-                        scroll_step=1,
-                        scroll_interval=0.1,
+                        max_chars=60,
+                        fontshadow='282828',
+                        # scroll=True,
+                        # width=379,
+                        # scroll_delay=1,
+                        # scroll_repeat=True,
+                        # scroll_clear=True,
+                        # scroll_step=1,
+                        # scroll_interval=0.1,
                     ),
                 widget.TextBox(
                        text='', # nf-cod-triangle-left
@@ -231,6 +235,7 @@ screens = [
                         background='#5a4fcf', # Iris
                         padding=1,
                         foreground='#e6a8d7', # Light Orchid
+                        fontshadow='282828',
                         update_interval=1.0
                     ),
                 widget.TextBox(
@@ -244,6 +249,7 @@ screens = [
                         background='#da9100', # Harvest Gold
                         foreground='#faf0be', # Blond
                         format='{tag}: {temp: .0f}{unit}',
+                        fontshadow='282828',
                         padding=5
                         ),
                 widget.TextBox(
@@ -257,6 +263,7 @@ screens = [
                         format=" %m/%d/%Y %A  %H:%M:%S ", 
                         fontsize = 12,
                         background='#648c11', # Bitter Lime
+                        fontshadow='282828',
                         foreground='#adff2f'  # Green Yellow
                     ),
                 widget.TextBox(
@@ -269,6 +276,7 @@ screens = [
                 widget.Volume(
                         background='#e52b50', # Amaranth
                         fmt = '奔 {} ',
+                        fontshadow='282828',
                         foreground='#ffcff1', # Shampoo 
                         # fontsize = 11
                     ),
@@ -289,6 +297,7 @@ screens = [
                         discharge_char = '',
                         full_char = '',
                         empty_char = '',
+                        fontshadow='282828',
                         unknown_char = ''
                     ),
                 widget.Spacer(
@@ -305,6 +314,7 @@ screens = [
                 widget.CurrentLayout(
                         background = '#5218fa', # Han Purple 
                         foreground='#dda0dd',   # Plum
+                        fontshadow='282828',
                         padding = 5
                     ),
                 widget.TextBox(
@@ -315,9 +325,9 @@ screens = [
                        padding=0
                     ),
                 widget.Systray(
-                        icon_size=16,
+                        icon_size=15,
                         background='#002147', # Oxford Blue 
-                        padding=5
+                        padding=3
                     ),
                 # widget.QuickExit(
                 #         default_text = " [x]",
@@ -325,26 +335,26 @@ screens = [
                 #         countdown_format = '{}s',
                 #         background='#1b1b1b'
                 #     ),
-                widget.TextBox(
-                       text=' ', # nf-cod-triangle-left
-                       fontsize=17,
-                       foreground='#8b008b', # Dark Magneta
-                       background='#002147',
-                       padding=0
-                    ),
-                widget.TextBox(
-                        background='#8b008b', # Dark Magneta 
-                        foreground='#f1a7fe', # Rich Brilliant Lavender
-                        text='                           ',
-                        width=469, 
-                        padding=10,
-                        scroll=True,
-                        scroll_delay=1,
-                        scroll_repeat=True,
-                        scroll_clear=True,
-                        scroll_step=1,
-                        scroll_interval=0.1,
-                    )
+                # widget.TextBox(
+                #        text=' ', # nf-cod-triangle-left
+                #        fontsize=17,
+                #        foreground='#8b008b', # Dark Magneta
+                #        background='#002147',
+                #        padding=0
+                #     ),
+                # widget.TextBox(
+                #         background='#8b008b', # Dark Magneta 
+                #         foreground='#f1a7fe', # Rich Brilliant Lavender
+                #         text='                           ',
+                #         width=469, 
+                #         padding=10,
+                #         scroll=True,
+                #         scroll_delay=1,
+                #         scroll_repeat=True,
+                #         scroll_clear=True,
+                #         scroll_step=1,
+                #         scroll_interval=0.1,
+                #     )
             ],
             17,
             background='#1a1110', # Licorice
