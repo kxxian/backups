@@ -77,7 +77,7 @@ keys = [
     # Browser firefox
     Key([mod], "b", lazy.spawn("qutebrowser"), desc="Launch qutebrowser"),
     # Rofi menu 
-    Key([mod], "m", lazy.spawn("dmenu_run -fn 'Hack Nerd Font Complete Mono-11'"), desc="Launch rofi menu"),
+    Key([mod], "m", lazy.spawn("rofi -show drun"), desc="Launch rofi menu"),
     # Brightness Up / Down 
     Key([], "XF86MonBrightnessUp",   lazy.spawn("brightnessctl set +5%"), desc="Brigthness up"),
     Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 5%-"), desc ="Brightness down"),
