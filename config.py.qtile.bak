@@ -203,7 +203,7 @@ screens = [
                 widget.WindowName(
                         padding = 10,
                         # empty_group_string = "                                             ",
-                        empty_group_string="display_info if application == true else null ",
+                        empty_group_string="display_info if application == true else self.msg",
                         background='#126180', # Blue Sapphire
                         foreground='#7fffd4', # Aquamarine
                         max_chars=60,
