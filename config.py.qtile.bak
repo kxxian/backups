@@ -183,7 +183,7 @@ screens = [
             [
                 widget.GroupBox(
                         highlight_method = 'line',
-                        inactive='#800000',     # Maroon
+                        inactive='#353839',     # Maroon
                         active='#76ff7a',
                         fontshadow='#65000b',   # Rosewood 
                         highlight_color=['#4169e1', '#080808'],
@@ -206,7 +206,7 @@ screens = [
                         padding = 10,
                         # empty_group_string = "                                             ",
                         background='#100c08', # Smokey Black
-                        max_chars=60,
+                        max_chars=70,
                         fontshadow='282828',
                         # scroll=True,
                         # width=379,
@@ -294,7 +294,7 @@ screens = [
                         battery = 0,
                         # fontsize = 11,
                         charge_char = '',
-                        discharge_char = '',
+                        discharge_char = '',
                         full_char = '',
                         empty_char = '',
                         fontshadow='282828',
