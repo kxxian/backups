@@ -182,11 +182,13 @@ screens = [
         top=bar.Bar(
             [
                 widget.GroupBox(
-                        highlight_method = 'block',
-                        block_highlight_text_color='#87cefa', # Light Sky Blue
-                        active='#76ff7a', # Screamin Greenn
-                        inactive='#b22222', # Brick Red
-                        fontshadow='#126180',
+                        highlight_method = 'line',
+                        inactive='#800000',     # Maroon
+                        active='#76ff7a',
+                        fontshadow='#65000b',   # Rosewood 
+                        highlight_color=['#4169e1', '#080808'],
+                        padding=3,
+                        borderwidth=0,
                         font="Hack Regular Nerd Font Complete Mono",
                     ),
                 widget.Prompt(),
@@ -194,18 +196,16 @@ screens = [
                         length=4
                     ),
                 widget.TextBox(
-                       text='', # nf-cod-triangle-left
+                       text='', # nf-cod-triangle-right
                        fontsize=17,
-                       foreground='#126180', # Blue Sapphire
-                       background='#1a1110', # Licorice
+                       foreground='#3f00ff', # Electric Ultramarine 
+                       background='#100c08',  # Smokey Black 
                        padding=0
                     ),
                 widget.WindowName(
                         padding = 10,
                         # empty_group_string = "                                             ",
-                        empty_group_string="display_info if application == true else self.msg",
-                        background='#126180', # Blue Sapphire
-                        foreground='#7fffd4', # Aquamarine
+                        background='#100c08', # Smokey Black
                         max_chars=60,
                         fontshadow='282828',
                         # scroll=True,
@@ -220,7 +220,7 @@ screens = [
                        text='', # nf-cod-triangle-left
                        fontsize=17,
                        foreground='#5a4fcf', # Iris
-                       background='#126180', # Blue Sapphire
+                       background='#100c08', # Smokey Black
                        padding=0
                     ),
                 widget.Chord(
@@ -357,7 +357,7 @@ screens = [
                 #     )
             ],
             17,
-            background='#1a1110', # Licorice
+            background='#3f00ff', # Electric Ultramarine
             # border_width=[1, 0, 1, 0],  # Draw top and bottom borders
             # border_color=["ffffff", "000000", "ffffff", "000000"]  # Borders are magenta
         ),
