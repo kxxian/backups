@@ -122,14 +122,14 @@ for i, group in enumerate(groups):
 
 layouts = [
     layout.Columns(
-        border_width=2,            
-        border_focus = '#ffffff',
-        border_focus_stack = '#ffffff',
+        border_width=1,            
+        border_focus = '#860111', # Red Devil
+        border_focus_stack = '#860111', # Red devil
         border_normal = '#282828',
         border_normal_stack = '#282828',
         border_on_single = True,
-        margin = 10,
-        margin_on_single = 25,
+        margin = 20,
+        margin_on_single = 40,
     ),
     layout.Max(),
     layout.Floating(
@@ -150,7 +150,7 @@ layouts = [
                 Match(func=lambda c: c.has_fixed_size()),
                 Match(func=lambda c: c.has_fixed_ratio()),
             ],
-        border_focus = '#ffffff',
+        border_focus = '#860111', # Red Devil
         border_normal = '#282828'
     ),
     # Try more layouts by unleashing below layouts.
@@ -162,7 +162,7 @@ layouts = [
     # layout.RatioTile(),
     # layout.Tile(),
     layout.TreeTab(
-            active_bg="282828",
+            active_bg="#860111", # Red Devil
             place_right=True,
             sections=['TreeTabs']
         ),
