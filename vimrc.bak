@@ -39,6 +39,7 @@ Plug 'neomake/neomake'
 Plug 'Mofiqul/dracula.nvim'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'dart-lang/dart-vim-plugin'
+Plug 'f-person/pubspec-assist-nvim'
 
 set encoding=UTF-8
 
