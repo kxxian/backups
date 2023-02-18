@@ -1,0 +1,9 @@
+snippet main 
+void main() {
+
+}// end main 
+endsnippet
+
+snippet print
+print();
+endsnippet
