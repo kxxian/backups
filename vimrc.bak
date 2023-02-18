@@ -99,6 +99,7 @@ autocmd FileType python map <buffer> <F9> :w<CR>:exec '!python3' shellescape(@%,
 autocmd FileType python imap <buffer> <F9> <esc>:w<CR>:exec '!python3' shellescape(@%, 1)<CR>
 
 " CocInstall coc-tsserver coc-hthml coc-css for web development
+" CocInstall coc-flutter-tools for flutter development
 "
 "Auto completion
 inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "<CR>"
