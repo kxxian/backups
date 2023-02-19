@@ -59,7 +59,7 @@ inoremap jj <Esc>
 " dart configuration 
 let g:lsc_auto_map = v:true
 let dart_html_in_string=v:true " enable HTML syntax higlightin 
-let g:dart_style_guide = 2 
+" let g:dart_style_guide = 2 
 let g:dart_format_on_save = 1 
 
 "NERDTree
