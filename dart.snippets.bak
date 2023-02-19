@@ -19,9 +19,9 @@ const factory Union.() = ;
 endsnippet
 
 snippet ptf
-part 'filename.freezed.dart'
+part 'filename.freezed.dart';
 endsnippet
 
 snippet pts
-part 'filename.g.dart'
+part 'filename.g.dart';
 endsnippet
