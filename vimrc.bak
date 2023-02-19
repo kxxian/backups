@@ -17,6 +17,8 @@ let mapleader = ","
 :set cursorline
 :set ignorecase
 :set modeline
+:set completeopt-=preview
+:set shortmess-=F
 
 " Make vim automatically refresh any files that haven't been edited by Vim
 :set autoread
@@ -40,6 +42,8 @@ Plug 'Mofiqul/dracula.nvim'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'dart-lang/dart-vim-plugin'
 Plug 'f-person/pubspec-assist-nvim'
+Plug 'natebosch/vim-lsc'
+Plug 'natebosch/vim-lsc-dart'
 
 set encoding=UTF-8
 
@@ -54,11 +58,18 @@ call neomake#configure#automake('nrwi', 500)
 "Remap esc to normal mode
 inoremap jj <Esc>
 
+" lsc configuration
+let g:lsc_server_commands = {'dart': 'dart_language_server'}
+let g:lsc_enable_autocomplete = v:false
+
 " dart configuration 
 let g:lsc_auto_map = v:true
 let dart_html_in_string=v:true " enable HTML syntax higlighting 
 let g:dart_style_guide = 2 
 let g:dart_format_on_save = 1 
+
+" dart toggle method body type
+noremap <buffer> <leader>tr :DartToggleMethodBodyType<cr>
 
 "NERDTree
 let NERDTreeShowHidden=1
