@@ -28,6 +28,7 @@
 snippet statelessW
 class ${1:name} extends StatelessWidget {
   const ${1:name}({Key key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -40,10 +41,12 @@ endsnippet
 snippet statefulW
 class ${1:name} extends StatefulWidget {
   ${1:name}({Key key}) : super(key: key);
+
   @override
   _${1:WidgetName}State createState() => _${1:WidgetName}State();
 }
 class _${1:index}State extends State<${1:index}> {
+
   @override
   Widget build(BuildContext context) {
     return Container(
