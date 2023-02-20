@@ -363,3 +363,7 @@ testWidgets(
    (WidgetTester tester) async {}
 );
 endsnippet
+
+snippet importM
+import 'package:flutter/material.dart';
+endsnippet
