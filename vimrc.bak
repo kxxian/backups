@@ -42,6 +42,12 @@ Plug 'Mofiqul/dracula.nvim'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'dart-lang/dart-vim-plugin'
 Plug 'f-person/pubspec-assist-nvim'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-fugitive'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 " Plug 'natebosch/vim-lsc'
 " Plug 'natebosch/vim-lsc-dart'
 
@@ -71,7 +77,19 @@ let g:dart_format_on_save = 1
 " dart toggle method body type
 noremap <buffer> <leader>tr :DartToggleMethodBodyType<cr>
 
-"NERDTree
+" fuzzy finder
+" <C-t> open in new tab 
+" <C-v> open vertical split 
+" <C-x> open horizontal split 
+nmap <C-P> :Files<CR>
+
+" fzf layout 
+" let g:fzf_layout = { 'down': '40%' }
+
+" git 
+nmap <leader>g :G<CR> 
+
+" NERDTree
 let NERDTreeShowHidden=1
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <leader>m :NERDTree<CR>
@@ -109,7 +127,7 @@ nnoremap <leader>l :tabnext<CR>
 nnoremap <leader>h :tabprevious<CR>
 
 "Terminal
-nnoremap <C-c> :terminal<CR>
+nnoremap <C-k> :terminal<CR>
 tnoremap <Esc> <C-\><C-n>
 
 "Run python
