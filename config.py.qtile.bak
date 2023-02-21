@@ -93,7 +93,7 @@ keys = [
     Key([mod, "shift"], "Print", lazy.spawn("scrot -s"), desc="Screenshot select")
 ]
 
-groups = [Group(i) for i in ["www", "ter", "lib", "etc", "rgr", "msc", "ply", "con", "dsc"]]
+groups = [Group(i) for i in ["www", "ter", "dev", "com", "dbs", "rgr", "img", "lib", "etc"]]
 
 for i, group in enumerate(groups):
     desktopNumber = str(i+1);
