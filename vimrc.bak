@@ -72,6 +72,12 @@ let dart_html_in_string=v:true " enable HTML syntax higlighting
 let g:dart_style_guide = 2 
 let g:dart_format_on_save = 1 
 
+nmap <silent> <Leader>fr :CocCommand flutter.run<CR>
+nmap <silent> <Leader>fpg :CocCommand flutter.pub.get<CR>
+nmap <silent> <Leader>fd :CocCommand flutter.devices<CR>
+nmap <silent> <Leader>fe :CocCommand flutter.emulators<CR>
+nmap <silent> <Leader>fR :CocCommand flutter.lsp.restart<CR>
+
 " dart toggle method body type
 noremap <buffer> <leader>tr :DartToggleMethodBodyType<cr>
 
