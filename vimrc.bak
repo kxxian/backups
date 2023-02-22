@@ -36,7 +36,6 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'ryanoasis/vim-devicons'
 Plug 'vim-airline/vim-airline'
 Plug 'rhysd/vim-fixjson'
-Plug 'mhinz/vim-startify'
 Plug 'neomake/neomake'
 Plug 'Mofiqul/dracula.nvim'
 Plug 'vim-airline/vim-airline-themes'
@@ -47,8 +46,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'thosakwe/vim-flutter'
-" Plug 'natebosch/vim-lsc'
-" Plug 'natebosch/vim-lsc-dart'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.x' }
 
 set encoding=UTF-8
 
@@ -62,11 +61,6 @@ call neomake#configure#automake('nrwi', 500)
 
 "Remap esc to normal mode
 inoremap jj <Esc>
-
-" lsc configuration
-" let g:lsc_server_commands = {'dart': 'dart_language_server'}
-" let g:lsc_enable_autocomplete = v:false
-" let g:lsc_auto_map = v:true
 
 " dart configuration 
 let dart_html_in_string=v:true " enable HTML syntax higlighting 
@@ -91,13 +85,18 @@ noremap <buffer> <leader>tr :DartToggleMethodBodyType<cr>
 " <C-t> open in new tab 
 " <C-v> open vertical split 
 " <C-x> open horizontal split 
+
+" open files
 nmap <C-P> :Files<CR>
 
 " fzf layout 
 " let g:fzf_layout = { 'down': '40%' }
 
 " git 
-nmap <leader>g :G<CR> 
+nmap <leader>gs :G<CR> 
+nmap <leader>gl :Git log<CR> 
+nmap <leader>gw :Gwrite<CR> 
+nmap <leader>gr :Greset<CR> 
 
 " NERDTree
 let NERDTreeShowHidden=1
