@@ -20,6 +20,7 @@ let mapleader = ","
 :set modeline
 :set completeopt-=preview
 :set shortmess-=F
+:set smartindent
 
 " Make vim automatically refresh any files that haven't been edited by Vim
 :set autoread
