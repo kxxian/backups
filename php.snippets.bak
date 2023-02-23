@@ -1,11 +1,24 @@
 snippet php
 <?php
 
+
+${1:}
+
+
 ?>
 endsnippet
 
 snippet php:
-<?php ?>
+<?php  ${1:} ?>
+endsnippet
+
+snippet config
+<?php 
+$servername = "${1:servername}";
+$username   = "${2:username}";
+$password   = "${3:password}";
+$dbname     = "${4:dbname}";
+?>
 endsnippet
 
 snippet html
@@ -14,10 +27,10 @@ snippet html
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="UTF-8">
-	<title></title>
+	<title>${1:title}</title>
 </head>
 <body>
-	
+${2:}	
 </body>
 </html>
 endsnippet
