@@ -15,6 +15,7 @@ let mapleader = ","
 :set clipboard+=unnamedplus
 :set undofile
 :set cursorline
+:set cursorcolumn
 :set ignorecase
 :set modeline
 :set completeopt-=preview
