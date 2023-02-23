@@ -135,6 +135,7 @@ alias cat="bat"
 alias update="sudo pacman -Syu"
 alias install="sudo pacman -S"
 alias remove="sudo pacman -Rns"
+alias refresh="sudo pacman -Syy"
 alias v="nvim"
 # open nerdfetch in every new terminal
 nerdfetch
