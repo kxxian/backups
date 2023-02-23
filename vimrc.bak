@@ -68,7 +68,7 @@ let g:dart_style_guide = 2
 let g:dart_format_on_save = 1 
 
 " flutter keys
-nnoremap <leader>fa :FlutterRun<cr>
+nnoremap <leader>fa :FlutterRun -d Linux<cr>
 nnoremap <leader>fq :FlutterQuit<cr>
 nnoremap <leader>fr :FlutterHotReload<cr>
 nnoremap <leader>fR :FlutterHotRestart<cr>
