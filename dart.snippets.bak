@@ -139,7 +139,7 @@ endsnippet
 snippet listViewB
 
 ListView.builder(
-  itemCount: ${1:1}
+  itemCount: ${1:1},
   itemBuilder: (BuildContext context, int index) {
   return ${2:};
  }
@@ -149,7 +149,7 @@ endsnippet
 snippet listViewS
 
 ListView.separated(
-  itemCount: ${1:1}
+  itemCount: ${1:1},
   separatorBuilder: (BuildContext context, int index) {
   return ${2:};
  }
