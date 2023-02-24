@@ -50,6 +50,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'thosakwe/vim-flutter'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.x' }
+Plug 'nvim-treesitter/nvim-treesitter'
 
 set encoding=UTF-8
 
@@ -60,6 +61,9 @@ call plug#end()
 call neomake#configure#automake('nrwi', 500)
 
 :colorscheme dracula 
+
+" TreeStitter intsall :TSinstall <language> 
+" TreeSiitter update  :TSUpdate all or :TSUpdate
 
 "Remap esc to normal mode
 inoremap jj <Esc>
@@ -117,10 +121,6 @@ nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <leader>m :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
-
-"NERDTree move tabs
-nnoremap <leader>[ :tabmove -1 <CR>
-nnoremap <leader>] :tabmove +1 <CR>
 
 "Airline smarter tab
 let g:airline#extensions#tabline#enabled = 1
