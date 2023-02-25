@@ -148,6 +148,9 @@ nnoremap <leader>q :tabclose<CR>
 nnoremap <leader>l :tabnext<CR>
 nnoremap <leader>h :tabprevious<CR>
 
+" hotkey for saving 
+nnoremap <leader>w :w<CR>
+
 "Terminal
 nnoremap <C-k> :terminal<CR>
 tnoremap <Esc> <C-\><C-n>
