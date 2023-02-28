@@ -137,5 +137,9 @@ alias install="sudo pacman -S"
 alias remove="sudo pacman -Rns"
 alias refresh="sudo pacman -Syy"
 alias v="nvim"
+
+# launch timeshift
+alias bak="sudo timeshift-gtk"
+
 # open nerdfetch in every new terminal
 nerdfetch
