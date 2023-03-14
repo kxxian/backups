@@ -260,7 +260,7 @@ screens = [
                        padding=0
                     ),
                 widget.Clock(
-                        format=" %m/%d/%Y %A  %H:%M:%S ", 
+                        format=" %Y/%m/%d %A  %H:%M:%S ", 
                         fontsize = 12,
                         background='#648c11', # Bitter Lime
                         fontshadow='282828',
