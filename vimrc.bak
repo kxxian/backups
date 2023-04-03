@@ -41,17 +41,22 @@ Plug 'rhysd/vim-fixjson'
 Plug 'neomake/neomake'
 Plug 'Mofiqul/dracula.nvim'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'dart-lang/dart-vim-plugin'
+Plug 'dart-lang/dart-vim-plugin' " Vim plugin
 Plug 'f-person/pubspec-assist-nvim'
 Plug 'jiangmiao/auto-pairs'
-Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive' " Git plugin
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'thosakwe/vim-flutter'
+Plug 'thosakwe/vim-flutter' " Flutter plugin
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.x' }
 Plug 'nvim-treesitter/nvim-treesitter'
-Plug 'pangloss/vim-javascript'
+Plug 'pangloss/vim-javascript' " Javascript plugin
+" Laravel plugins 
+Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-projectionist'
+Plug 'noahfrederick/vim-composer'
+Plug 'noahfrederick/vim-laravel'
 
 set encoding=UTF-8
 
@@ -84,6 +89,11 @@ nnoremap <leader>fV :FlutterVSplit<CR>
 nnoremap <leader>fs :FlutterSplit<CR>
 nnoremap <leader>ft :FlutterTab<CR>
 nnoremap <leader>fss :FlutterScreenshot<CR>
+
+" laravel keys 
+nnoremap <leader>la :Start <CR> 
+nnoremap <leader>lc :Console <CR> 
+
 
 " horizontal resize
 nnoremap <leader>- :res -5<CR>
