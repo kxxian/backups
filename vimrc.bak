@@ -42,6 +42,7 @@ Plug 'rhysd/vim-fixjson'
 Plug 'Yggdroot/indentLine' " indention line guides
 Plug 'neomake/neomake'
 Plug 'Mofiqul/dracula.nvim'
+Plug 'Valloric/MatchTagAlways' " highlight enclosign tags
 Plug 'vim-airline/vim-airline-themes'
 Plug 'dart-lang/dart-vim-plugin' " Vim plugin
 Plug 'f-person/pubspec-assist-nvim'
@@ -75,6 +76,9 @@ call neomake#configure#automake('nrwi', 500)
 
 "Remap esc to normal mode
 inoremap jj <Esc>
+
+" jump to other tags 
+nnoremap <leader>% :MtaJumpToOtherTag<cr>
 
 " dart configuration 
 let dart_html_in_string=v:true " enable HTML syntax higlighting 
