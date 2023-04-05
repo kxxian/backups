@@ -21,6 +21,7 @@ let mapleader = ","
 :set completeopt-=preview
 :set shortmess-=F
 :set smartindent
+:set list lcs=tab:\|\
 
 " Make vim automatically refresh any files that haven't been edited by Vim
 :set autoread
@@ -38,6 +39,7 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'ryanoasis/vim-devicons'
 Plug 'vim-airline/vim-airline'
 Plug 'rhysd/vim-fixjson'
+Plug 'Yggdroot/indentLine' " indention line guides
 Plug 'neomake/neomake'
 Plug 'Mofiqul/dracula.nvim'
 Plug 'vim-airline/vim-airline-themes'
@@ -175,6 +177,9 @@ autocmd FileType python imap <buffer> <F9> <esc>:w<CR>:exec '!python3' shellesca
 
 " CocInstall coc-tsserver coc-html coc-css for web development
 " CocInstall coc-flutter-tools for flutter development
+" CocInstall coc-blade for laravel blade templates 
+" for php development 
+" CocInstall coc-phpls coc-json coc-tailwind coc-tsserver
 "
 "Auto completion
 inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "<CR>"
