@@ -16,7 +16,7 @@ font:
     family: Hack Nerd Font Mono
     style: Bold Italic
 
-  size: 10
+  size: 8
 
 items:
   - colors:
