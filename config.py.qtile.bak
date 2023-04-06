@@ -172,8 +172,8 @@ layouts = [
 
 widget_defaults = dict(
     font="Hack Nerd Font Complete Mono",
-    fontsize=10,
-    padding=1,
+    fontsize=11,
+    padding=4,
 )
 extension_defaults = widget_defaults.copy()
 
@@ -269,7 +269,6 @@ screens = [
                         fmt = '奔 {} ',
                         fontshadow='282828',
                         foreground='#ffcff1', # Shampoo 
-                        # fontsize = 11
                     ),
                 widget.TextBox(
                        text='', # nf-cod-triangle-left
@@ -283,7 +282,6 @@ screens = [
                         foreground='#ffa07a', # Light Salmon
                         update_interval = 5,
                         battery = 0,
-                        # fontsize = 11,
                         charge_char = '',
                         discharge_char = '',
                         full_char = '',
@@ -321,7 +319,7 @@ screens = [
                         padding=3
                     ),
             ],
-            16,
+            15,
             background='#3f00ff', # Electric Ultramarine
             # border_width=[1, 0, 1, 0],  # Draw top and bottom borders
             # border_color=["ffffff", "000000", "ffffff", "000000"]  # Borders are magenta
