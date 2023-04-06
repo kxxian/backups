@@ -179,16 +179,15 @@ extension_defaults = widget_defaults.copy()
 
 screens = [
     Screen(
-        top=bar.Bar(
+        bottom=bar.Bar(
             [
                 widget.GroupBox(
                         highlight_method = 'line',
-                        inactive='#353839',     # Maroon
-                        active='#76ff7a',
-                        fontshadow='#262626',   # Rosewood 
-                        highlight_color=['#4169e1', '#080808'],
-                        padding=2,
-                        borderwidth=0,
+                        inactive='#353839',     
+                        fontshadow='282828',
+                        highlight_color=['#4169e1', '#282828'],
+                        padding=5,
+                        borderwidth=-2,
                         font="Hack Regular Nerd Font Complete Mono",
                     ),
                 widget.Prompt(),
@@ -198,7 +197,7 @@ screens = [
                 widget.TextBox(
                        text='', # nf-cod-triangle-right
                        fontsize=17,
-                       foreground='#3f00ff', # Electric Ultramarine 
+                       foreground='#4169e1', # Royal blue 
                        background='#100c08',  # Smokey Black 
                        padding=0
                     ),
@@ -212,7 +211,7 @@ screens = [
                 widget.TextBox(
                        text='', # nf-cod-triangle-left
                        fontsize=17,
-                       foreground='#5a4fcf', # Iris
+                       foreground='#534b4f', # Dark Liver 
                        background='#100c08', # Smokey Black
                        padding=0
                     ),
@@ -225,68 +224,65 @@ screens = [
                 # NB Systray is incompatible with Wayland, consider using StatusNotifier instead
                 # widget.StatusNotifier(),
                 widget.CPU(
-                        background='#5a4fcf', # Iris
-                        padding=4,
+                        background='#534b4f', # Dark Liver 
+                        padding=0,
                         fontsize=12,
-                        foreground='#e6a8d7', # Light Orchid
-                        fontshadow='282828',
+                        foreground='#ffffff', # Light Orchid
                         update_interval=3.0
                     ),
                 widget.TextBox(
-                       text='', # nf-cod-triangle-left
+                       # text='', # nf-cod-triangle-left
                        fontsize=17,
-                       foreground='#da9100',
-                       background='#5a4fcf',
+                       foreground='#534b4f', # Dark Liver
+                       background='#534b4f', # Dark Liver
                        padding=0
                     ),
                 widget.ThermalSensor(
-                        background='#da9100', # Harvest Gold
-                        foreground='#faf0be', # Blond
+                        background='#534b4f', # Dark Liver 
+                        foreground='ffffff', 
                         format='{tag}: {temp: .0f}{unit}',
                         fontsize=12,
-                        fontshadow='282828',
                         update_interval=3.0,
                         padding=5
                         ),
                 widget.TextBox(
                        text='', # nf-cod-triangle-left
                        fontsize=17,
-                       foreground='#648c11', # Bitter Lime
-                       background='#da9100',
+                       foreground='#4169e1', # Royal Blue 
+                       background='#534b4f', # Dark Liver
                        padding=0
                     ),
                 widget.Clock(
                         format=" %Y-%m-%d %A  %H:%M:%S ", 
-                        background='#648c11', # Bitter Lime
+                        background='#4169e1', # Royal Blue 
                         fontsize=12,
-                        fontshadow='282828',
-                        foreground='#adff2f'  # Green Yellow
+                        foreground='ffffff',  
+                        padding=0,
                     ),
                 widget.TextBox(
-                       text='', # nf-cod-triangle-left
+                       # text='', # nf-cod-triangle-left
                        fontsize=17,
-                       foreground='#e52b50', # Amaranth
-                       background='#648c11',
+                       foreground='#4169e1', # Corn Flower Blue
+                       background='#4169e1', # Royal Blue
                        padding=0
                     ),
                 widget.Volume(
-                        background='#e52b50', # Amaranth
+                        background='#4169e1', # Corn Flower Blue
                         fontsize=12,
                         # fmt = '奔 {} ',
                         fmt = 'Vol: {} ',
-                        fontshadow='282828',
-                        foreground='#ffcff1', # Shampoo 
+                        foreground='ffffff', 
                     ),
                 widget.TextBox(
                        text='', # nf-cod-triangle-left
                        fontsize=17,
-                       background='#e52b50',
-                       foreground='#860111',
+                       background='#4169e1', # Corn Flower Blue
+                       foreground='#ff7e00',
                        padding=0
                     ),
                 widget.Battery(
-                        background='#860111', # Red Devil
-                        foreground='#ffa07a', # Light Salmon
+                        background='#ff7e00', # Amber (Sae/Ece)
+                        foreground='000000', 
                         update_interval = 5,
                         battery = 0,
                         # charge_char = '',
@@ -298,45 +294,43 @@ screens = [
                         full_char = 'F',
                         # empty_char = '',
                         empty_char = 'E',
-                        fontshadow='282828',
                         # unknown_char = ''
                         unknown_char = '?'
                     ),
                 widget.Spacer(
-                        background='#860111', # Red Devil
+                        background='#ff7e00', # Amber (Sae/Ece)
                         length=2
                     ),
                 widget.TextBox(
-                       text='', # nf-cod-triangle-left
+                       # text='', # nf-cod-triangle-left
                        fontsize=17,
-                       foreground='#5218fa', # Han Purple
-                       background='#860111', # Red Devill
+                       foreground='#ff7e00', # Amber (Sae/Ece) 
+                       background='#ff7e00', # Amber (Sae/Ece)
                        padding=0
                     ),
                 widget.CurrentLayout(
-                        background = '#5218fa', # Han Purple 
+                        background = '#ff7e00', # Amber (Sae/Ece) 
                         fontsize=12,
-                        foreground='#dda0dd',   # Plum
-                        fontshadow='282828',
+                        foreground='000000', 
                         padding = 5
                     ),
                 widget.TextBox(
                        text='', # nf-cod-triangle-left
                        fontsize=17,
-                       foreground='#002147',
-                       background='#5218fa',
+                       foreground='#ae0c00', # Mordant Red 19
+                       background='#ff7e00', # Amber (Sae/Ece)
                        padding=0
                     ),
                 widget.Systray(
                         icon_size=14,
-                        background='#002147', # Oxford Blue 
+                        background='#ae0c00', # Mordant Red 19 
                         padding=3
                     ),
             ],
-            15,
-            background='#3f00ff', # Electric Ultramarine
-            border_width=[2, 0, 1, 0],  # Draw top and bottom borders
-            # border_color=["ffffff", "000000", "ffffff", "000000"]  # Borders are magenta
+            13,
+            background='#4169e1', # Royal Blue 
+            border_width=[0, 2, 0, 2],  # Draw top, right, bottom, left borders
+            # border_color=["ffffff", "000000", "ffffff", "000000"]  
         ),
     ),
 ]
