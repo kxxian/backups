@@ -93,7 +93,7 @@ keys = [
     Key([mod, "shift"], "Print", lazy.spawn("scrot -s"), desc="Screenshot select")
 ]
 
-groups = [Group(i) for i in ["ter", "dev", "www", "dbs", "com", "fmr", "img", "lib", "etc"]]
+groups = [Group(i) for i in ["TRM", "DEV", "WWW", "DBS", "COM", "FMS", "IMG", "LOA", "ALL"]]
 
 for i, group in enumerate(groups):
     desktopNumber = str(i+1);
@@ -172,7 +172,7 @@ layouts = [
 
 widget_defaults = dict(
     font="Hack Nerd Font Complete Mono",
-    fontsize=12,
+    fontsize=10,
     padding=1,
 )
 extension_defaults = widget_defaults.copy()
@@ -185,9 +185,9 @@ screens = [
                         highlight_method = 'line',
                         inactive='#353839',     # Maroon
                         active='#76ff7a',
-                        fontshadow='#65000b',   # Rosewood 
+                        fontshadow='#262626',   # Rosewood 
                         highlight_color=['#4169e1', '#080808'],
-                        padding=3,
+                        padding=2,
                         borderwidth=0,
                         font="Hack Regular Nerd Font Complete Mono",
                     ),
@@ -253,7 +253,6 @@ screens = [
                     ),
                 widget.Clock(
                         format=" %Y-%m-%d %A  %H:%M:%S ", 
-                        fontsize = 12,
                         background='#648c11', # Bitter Lime
                         fontshadow='282828',
                         foreground='#adff2f'  # Green Yellow
@@ -322,7 +321,7 @@ screens = [
                         padding=3
                     ),
             ],
-            17,
+            16,
             background='#3f00ff', # Electric Ultramarine
             # border_width=[1, 0, 1, 0],  # Draw top and bottom borders
             # border_color=["ffffff", "000000", "ffffff", "000000"]  # Borders are magenta
