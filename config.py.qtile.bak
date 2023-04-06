@@ -172,7 +172,7 @@ layouts = [
 
 widget_defaults = dict(
     font="Hack Nerd Font Complete Mono",
-    fontsize=11,
+    fontsize=10,
     padding=4,
 )
 extension_defaults = widget_defaults.copy()
@@ -204,6 +204,7 @@ screens = [
                     ),
                 widget.WindowName(
                         padding = 10,
+                        fontsize=12,
                         background='#100c08', # Smokey Black
                         max_chars=70,
                         fontshadow='282828',
@@ -225,10 +226,11 @@ screens = [
                 # widget.StatusNotifier(),
                 widget.CPU(
                         background='#5a4fcf', # Iris
-                        padding=1,
+                        padding=4,
+                        fontsize=12,
                         foreground='#e6a8d7', # Light Orchid
                         fontshadow='282828',
-                        update_interval=1.0
+                        update_interval=3.0
                     ),
                 widget.TextBox(
                        text='', # nf-cod-triangle-left
@@ -241,7 +243,9 @@ screens = [
                         background='#da9100', # Harvest Gold
                         foreground='#faf0be', # Blond
                         format='{tag}: {temp: .0f}{unit}',
+                        fontsize=12,
                         fontshadow='282828',
+                        update_interval=3.0,
                         padding=5
                         ),
                 widget.TextBox(
@@ -254,6 +258,7 @@ screens = [
                 widget.Clock(
                         format=" %Y-%m-%d %A  %H:%M:%S ", 
                         background='#648c11', # Bitter Lime
+                        fontsize=12,
                         fontshadow='282828',
                         foreground='#adff2f'  # Green Yellow
                     ),
@@ -266,6 +271,7 @@ screens = [
                     ),
                 widget.Volume(
                         background='#e52b50', # Amaranth
+                        fontsize=12,
                         fmt = '奔 {} ',
                         fontshadow='282828',
                         foreground='#ffcff1', # Shampoo 
@@ -282,12 +288,18 @@ screens = [
                         foreground='#ffa07a', # Light Salmon
                         update_interval = 5,
                         battery = 0,
-                        charge_char = '',
-                        discharge_char = '',
-                        full_char = '',
-                        empty_char = '',
+                        # charge_char = '',
+                        charge_char = 'C',
+                        fontsize=12,
+                        # discharge_char = '',
+                        discharge_char = 'D',
+                        # full_char = '',
+                        full_char = 'F',
+                        # empty_char = '',
+                        empty_char = 'E',
                         fontshadow='282828',
-                        unknown_char = ''
+                        # unknown_char = ''
+                        unknown_char = '?'
                     ),
                 widget.Spacer(
                         background='#860111', # Red Devil
@@ -302,6 +314,7 @@ screens = [
                     ),
                 widget.CurrentLayout(
                         background = '#5218fa', # Han Purple 
+                        fontsize=12,
                         foreground='#dda0dd',   # Plum
                         fontshadow='282828',
                         padding = 5
@@ -314,14 +327,14 @@ screens = [
                        padding=0
                     ),
                 widget.Systray(
-                        icon_size=15,
+                        icon_size=14,
                         background='#002147', # Oxford Blue 
                         padding=3
                     ),
             ],
             15,
             background='#3f00ff', # Electric Ultramarine
-            # border_width=[1, 0, 1, 0],  # Draw top and bottom borders
+            border_width=[2, 0, 1, 0],  # Draw top and bottom borders
             # border_color=["ffffff", "000000", "ffffff", "000000"]  # Borders are magenta
         ),
     ),
