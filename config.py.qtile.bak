@@ -272,7 +272,8 @@ screens = [
                 widget.Volume(
                         background='#e52b50', # Amaranth
                         fontsize=12,
-                        fmt = '奔 {} ',
+                        # fmt = '奔 {} ',
+                        fmt = 'Vol: {} ',
                         fontshadow='282828',
                         foreground='#ffcff1', # Shampoo 
                     ),
