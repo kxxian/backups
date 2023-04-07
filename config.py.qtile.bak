@@ -128,8 +128,8 @@ layouts = [
         border_normal = '#282828',
         border_normal_stack = '#282828',
         border_on_single = True,
-        margin = 20,
-        margin_on_single = 40,
+        margin = 15,
+        margin_on_single = 45,
     ),
     layout.Max(),
     layout.Floating(
