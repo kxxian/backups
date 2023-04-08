@@ -6,11 +6,13 @@ let mapleader = ","
 :set number
 :set relativenumber
 :set autoindent
-:set tabstop=4
+:set tabstop=2
 :set shiftwidth=4
-:set smarttab
-:set copyindent
 :set softtabstop=4
+:set noexpandtab
+:set smarttab
+:set smartindent
+:set copyindent
 :set mouse=a
 :set clipboard+=unnamedplus
 :set undofile
@@ -20,7 +22,6 @@ let mapleader = ","
 :set modeline
 :set completeopt-=preview
 :set shortmess-=F
-:set smartindent
 :set list lcs=tab:\|\
 
 " Make vim automatically refresh any files that haven't been edited by Vim
@@ -42,7 +43,7 @@ Plug 'rhysd/vim-fixjson'
 Plug 'Yggdroot/indentLine' " indention line guides
 Plug 'neomake/neomake'
 Plug 'Mofiqul/dracula.nvim'
-Plug 'Valloric/MatchTagAlways' " highlight enclosign tags
+Plug 'Valloric/MatchTagAlways' " highlight enclosing tags
 Plug 'vim-airline/vim-airline-themes'
 Plug 'dart-lang/dart-vim-plugin' " Vim plugin
 Plug 'f-person/pubspec-assist-nvim'
