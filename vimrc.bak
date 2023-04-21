@@ -81,6 +81,9 @@ inoremap jj <Esc>
 " jump to other tags 
 nnoremap <leader>% :MtaJumpToOtherTag<cr>
 
+" vim surround ysiw remap 
+nmap <leader>s ysiw
+
 " dart configuration 
 let dart_html_in_string=v:true " enable HTML syntax higlighting 
 let g:dart_style_guide=2 
@@ -185,6 +188,8 @@ autocmd FileType python imap <buffer> <F9> <esc>:w<CR>:exec '!python3' shellesca
 " CocInstall coc-blade for laravel blade templates 
 " for php development 
 " CocInstall coc-phpls coc-json coc-tailwind coc-tsserver
+" for javascript development
+" CocInsall tsserver 
 "
 "Auto completion
 inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "<CR>"
