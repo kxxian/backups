@@ -230,28 +230,28 @@ screens = [
                 ),
                 # NB Systray is incompatible with Wayland, consider using StatusNotifier instead
                 # widget.StatusNotifier(),
-                # widget.CPU(
-                #         background='#534b4f', # Dark Liver 
-                #         padding=0,
-                #         fontsize=12,
-                #         foreground='#ffffff', # Light Orchid
-                #         update_interval=3.0
-                #     ),
-                # widget.TextBox(
-                #        # text='', # nf-cod-triangle-left
-                #        fontsize=17,
-                #        foreground='#534b4f', # Dark Liver
-                #        background='#534b4f', # Dark Liver
-                #        padding=0
-                #     ),
-                # widget.ThermalSensor(
-                #         background='#534b4f', # Dark Liver 
-                #         foreground='ffffff', 
-                #         format='{tag}: {temp: .0f}{unit}',
-                #         fontsize=12,
-                #         update_interval=3.0,
-                #         padding=5
-                #         ),
+                widget.CPU(
+                        background='#534b4f', # Dark Liver 
+                        padding=0,
+                        fontsize=12,
+                        foreground='#ffffff', # Light Orchid
+                        update_interval=3.0
+                    ),
+                widget.TextBox(
+                       # text='', # nf-cod-triangle-left
+                       fontsize=17,
+                       foreground='#534b4f', # Dark Liver
+                       background='#534b4f', # Dark Liver
+                       padding=0
+                    ),
+                widget.ThermalSensor(
+                        background='#534b4f', # Dark Liver 
+                        foreground='ffffff', 
+                        format='{tag}: {temp: .0f}{unit}',
+                        fontsize=12,
+                        update_interval=3.0,
+                        padding=5
+                        ),
                 widget.TextBox(
                        text='', # nf-cod-triangle-left
                        fontsize=17,
