@@ -122,6 +122,9 @@ source "$OSH"/oh-my-bash.sh
 # Chrome PATH
 export PATH=$PATH:/opt/google/chrome
 
+# Laravel PATH
+export PATH="$PATH:$HOME/.config/composer/vendor/bin"
+
 # Set personal aliases, overriding those provided by oh-my-bash libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-bash
 # users are encouraged to define aliases within the OSH_CUSTOM folder.
@@ -141,5 +144,5 @@ alias v="nvim"
 # launch timeshift
 alias bak="sudo timeshift-gtk"
 
-# open nerdfetch in every new terminal
-nerdfetch
+# open fastfetch in every new terminal
+fastfetch
