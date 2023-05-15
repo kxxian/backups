@@ -75,7 +75,7 @@ keys = [
     # Thunar
     Key([mod], "e", lazy.spawn("alacritty -e ranger"), desc="Launch ranger"),
     # Browser firefox
-    Key([mod], "b", lazy.spawn("qutebrowser"), desc="Launch qutebrowser"),
+    Key([mod], "b", lazy.spawn("brave"), desc="Launch Brave"),
     # Rofi menu 
     Key([mod], "m", lazy.spawn("rofi -show drun"), desc="Launch rofi menu"),
     # Brightness Up / Down 
